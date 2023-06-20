@@ -244,6 +244,7 @@ Figure 4.6: Provincial comparison of remotely sensed data and China’s recorded
 Figure 4.7: DeepLabV3+ estimated historical XCH4 emission boundaries for the years 2000 and 2010, based on recorded urban and paddied rice extents in the year 2018.
 
 # Discussion
+![](Accuracy_Assessment.png)
 1. <a name="_page22_x72.00_y81.35"></a><a name="_page22_x72.00_y72.00"></a>Accuracy Assessment: Remotely sensed estimations versus China’s recorded estimations
 
 Table 1: Provincial Comparison (2000 - 2018) by km2: Urban Extent (GAIA), Paddied Rice Extent (PPPM), and China’s Recorded Agricultural Statistics (Sown Area)

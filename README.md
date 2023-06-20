@@ -57,7 +57,7 @@ These research interests lie at the intersection of environmental monitoring (re
 
 # Background
 
-![](Case_Study.png)
+![](/assets/Case_Study.png)
 
 <a name="_page7_x72.00_y72.00"></a>Figure 1.1: Case Study
 
@@ -150,7 +150,7 @@ Acquisition of rice phenology data – agriculturally verified dates for periods
 
 ### Forecasting Historical XCH4 Emission Extents: The Encoder-Decoder Architecture of DeepLabv3+ for Image Segmentation
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.003.png)
+![](/assets/DeepLabv3+.png)
 
 Figure 3.1: DeepLabv3+ Architecture
 
@@ -185,11 +185,11 @@ DeepLabv3+ was selected for this study’s objective in forecasting historical X
 # Results
 1. <a name="_page18_x72.00_y81.35"></a><a name="_page18_x72.00_y72.00"></a>YRD Urban Extent Mappings (2000, 2010, 2018): GAIA and Landsat Composites
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.004.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.005.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.006.png)
+![](/assets/Urb_2000.png) ![](/assets/Urb_2010.png) ![](/assets/Urb_2018.png)
 
 (a) Urban Extent (2000) (b) Urban Extent (2010) (c) Urban Extent (2018)
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.007.png)
+![](/assets/Urb_2000to2018.png)
 
 (d) Total Urban Expansion
 
@@ -197,7 +197,7 @@ Figure 4.1: Urban extents based on GAIA dataset and Landsat composites (2000, 20
 
 2. Provincial<a name="_page18_x72.00_y444.51"></a> Urban Extent Mappings (2000, 2010, 2018): GAIA and Landsat Composites
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.008.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.009.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.010.png)
+![](/assets/Prov_2000.png) ![](/assets/Prov_2010.png) ![](/assets/Prov_2018.png)
 
 (a) Urban Extent (2000) (b) Urban Extent (2010) (c) Urban Extent (2018)
 
@@ -205,7 +205,7 @@ Figure 4.2: Provincial urban extents based on GAIA dataset and Landsat composite
 
 3. Paddied<a name="_page19_x72.00_y72.00"></a> Rice Extent Mappings (2000, 2010, 2018): PPPM and Landsat Composites
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.011.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.012.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.013.png)
+![](/assets/Rice_2000.png) ![](/assets/Rice_2010.png) ![](/assets/Rice_2018.png)
 
 (a) Rice Extent (2000) (b) Rice Extent (2010) (c) Rice Extent (2018)
 
@@ -213,25 +213,26 @@ Figure 4.3: Paddied rice extents based on PPPM algorithm and Landsat composites 
 
 4. Urban<a name="_page19_x72.00_y289.18"></a> Extents and Paddied Rice Mappings (2000, 2010, 2018)
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.014.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.015.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.016.png)
+![](/assets/Urb_Rice_2000.png) ![](/assets/Urb_Rice_2010.png) ![](/assets/Urb_Rice_2018.png)
 
 1) Total Extents (2000) (b) Total Extents (2010) (c) Total Extents (2018)
 
 Figure 4.4: Overlaying urban expansion with paddied rice extents: Landsat composites coupled with GAIA and PPPM (2000, 2010, 2018).
 
-5. XCH4<a name="_page20_x72.00_y72.00"></a> Emission Extents: S5-P TROPOMI Measurements (2018)
+5. Raw XCH4 Emission Extents: S5-P TROPOMI Measurements (2018)
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.017.png)
+![](/assets/XCH4_2018.png)
 
-2) Spatial Autocorrelation: ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.018.png)Hotspot Analysis of XCH4
+Spatial Autocorrelation: Hotspot Analysis of XCH4 (2018)
 
-(a) Raw XCH4 emissions emissions
+![](/assets/XCH4_2018_Hotspot.png)
+
 
 Figure 4.5: S-5P TROPOMI estimated XCH4 emissions (left) and Spatial Autocorrelation assessment (right). XCH4 estimates captured by S-5P are represented in parts per billion (ppb) and range from 1650 to 1950. Estimates captured over this study area for the year 2018 have a range in intensity between 1805 and 1910.
 
 6. Comparing<a name="_page20_x72.00_y343.48"></a> Remotely Sensed Data with China’s Recorded Estimates: Urban Extents (GAIA), and Paddied Rice Extents (PPPM vs China’s Recorded Agricultural Statistics)
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.019.png)
+![](/assets/Prov_Stats.png)
 
 Figure 4.6: Provincial comparison of remotely sensed data and China’s recorded statistics (2000 to 2018).
 
@@ -244,7 +245,7 @@ Figure 4.6: Provincial comparison of remotely sensed data and China’s recorded
 Figure 4.7: DeepLabV3+ estimated historical XCH4 emission boundaries for the years 2000 and 2010, based on recorded urban and paddied rice extents in the year 2018.
 
 # Discussion
-![](Accuracy_Assessment.png)
+![](/assets/Accuracy_Assessment.png)
 1. <a name="_page22_x72.00_y81.35"></a><a name="_page22_x72.00_y72.00"></a>Accuracy Assessment: Remotely sensed estimations versus China’s recorded estimations
 
 Table 1: Provincial Comparison (2000 - 2018) by km2: Urban Extent (GAIA), Paddied Rice Extent (PPPM), and China’s Recorded Agricultural Statistics (Sown Area)

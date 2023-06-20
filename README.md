@@ -301,9 +301,11 @@ The hope of this study is to enlighten the viewer on the prolific capabilities o
 
 GEE link(s) and the Google Colab Notebook containing the CNN model can be followed below.
 
-GAIA: https://code.earthengine.google.com/7f2eb1d430833ff194bd4ccd7e724b39 PPPM: https://code.earthengine.google.com/a850b64d8fe124e6d2fc4c7ac599a09a Google Colab Jupyter Notebook (DeepLabv3+ Architecture):
+GAIA: https://code.earthengine.google.com/7f2eb1d430833ff194bd4ccd7e724b39 
 
-https://colab.research.google.com/drive/1HTWfWMo0rU8- jP6z2rowWxtN6Jt4CJPp?usp=sharing
+PPPM: https://code.earthengine.google.com/a850b64d8fe124e6d2fc4c7ac599a09a 
+
+Google Colab Jupyter Notebook (DeepLabv3+ Architecture): https://colab.research.google.com/drive/1HTWfWMo0rU8- jP6z2rowWxtN6Jt4CJPp?usp=sharing
 
 # References
 

@@ -57,7 +57,7 @@ These research interests lie at the intersection of environmental monitoring (re
 
 # Background
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.002.png)
+![](Case_Study.png)
 
 <a name="_page7_x72.00_y72.00"></a>Figure 1.1: Case Study
 

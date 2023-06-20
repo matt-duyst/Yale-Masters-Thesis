@@ -245,27 +245,25 @@ Figure 4.6: Provincial comparison of remotely sensed data and China’s recorded
 Figure 4.7: DeepLabV3+ estimated historical XCH4 emission boundaries for the years 2000 and 2010, based on recorded urban and paddied rice extents in the year 2018.
 
 # Discussion
-![](/assets/Accuracy_Assessment.png)
-1. <a name="_page22_x72.00_y81.35"></a><a name="_page22_x72.00_y72.00"></a>Accuracy Assessment: Remotely sensed estimations versus China’s recorded estimations
+
+### Accuracy Assessment: Remotely sensed estimations versus China’s recorded estimations
+
+|Province|Urban Extent (GAIA)|Paddied Rice (PPPM)|Sown Area of Rice|
+| - | - | - | - |
+|Shanghai (2000)|1,211|1,123|1,130|
+|Zhejiang (2000)|1,752|5,983|10,290|
+|Anhui (2000)|2,326|19,651|21,490|
+|Jiangsu (2000)|3,008|15,505|22,090|
+|Shanghai (2010)|3,310|577|1,210|
+|Zhejiang (2010)|6,731|6,028|8,220|
+|Anhui (2010)|4,748|22,977|23,390|
+|Jiangsu (2010)|10,042|18,825|22,240|
+|Shanghai (2018)|5,121|536|1,040|
+|Zhejiang (2018)|14,957|4,463|6,510|
+|Anhui (2018)|10,217|17,430|25,450|
+|Jiangsu (2018)|19,430|16,038|22,150|
 
 Table 1: Provincial Comparison (2000 - 2018) by km2: Urban Extent (GAIA), Paddied Rice Extent (PPPM), and China’s Recorded Agricultural Statistics (Sown Area)
-
-
-
-|Province|UrbanExtent (GAIA)|Paddi|ed Rice (PPPM)|Sown Are|aof Rice|
-| - | - | - | - | - | - |
-|Shanghai (2000)|1,211||1,123||1,130|
-|Zhejiang (2000)|1,752||5,983||10,290|
-|Anhui (2000)|2,326||19,651||21,490|
-|Jiangsu (2000)|3,008||15,505||22,090|
-|Shanghai (2010)|3,310||577||1,210|
-|Zhejiang (2010)|6,731||6,028||8,220|
-|Anhui (2010)|4,748||22,977||23,390|
-|Jiangsu (2010)|10,042||18,825||22,240|
-|Shanghai (2018)|5,121||536||1,040|
-|Zhejiang (2018)|14,957||4,463||6,510|
-|Anhui (2018)|10,217||17,430||25,450|
-|Jiangsu (2018)|19,430||16,038||22,150|
 
 ### Urban Expansion Analysis:
 

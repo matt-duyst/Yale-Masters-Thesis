@@ -3,7 +3,9 @@ Urban-Methane Transfers (2000 - 2018): A Convolutional Neural Network (CNN) Appr
 
 # Abstract
 
-This observational study entwines remotely sensed images (Landsat and Sentinel 5-Precursor) with machine learning algorithms – a Global Artificial Impervious Area (GAIA) algorithm and a Phenology and Pixel-Based Paddied Rice Mapping (PPPM) algorithm – to autonomously classify urban boundaries and paddied rice fields along China’s most densely populated, and agriculturally productive region: The YRD. Alter- ations in land-use patterns, i.e., the urbanization process along provinces home to the largest urban centers (like Shanghai), are examined through these dichotomies of urban boundaries and agricultural (paddied rice) boundaries. Landsat images are compiled and coupled with the GAIA algorithm and PPPM algorithm for autonomous classification. An accuracy assessment of the aglorithmically-derived classification of remotely sensed estimations for paddied rice is performed by comparing this study’s observations with with China’s provincial recordings of agricultural statistics of the sown area of rice. The scope of this observational study is further propelled by an added atmospheric dimension: Methane (CH4). Atmospheric CH4 emission concentrations are identified through sources and sinks via the proxy of column-averaged dry air mixing ratio of CH4 (XCH4), captured by the TROPOspheric Monitoring Instrument (TROPOMI) sensor onboard the Sentinel 5-Precursor (S5-P). This work overcomes temporal lag-times apparent in the image acquisition process – Landsat images available for the entire scope of the study (2000 – 2018), but S-5P images confined to the satellite’s launch in late 2017 – through an image segmentation solution of deep learning architectures. A Convolutional Neural Network (CNN) is trained, tested, and evaluated using 2018 data where all variables (urban extents, paddied rice extents, and XCH4 extents) are recorded. The architecture chosen for the CNN is DeepLabv3+, a well-suited model that combines powerful seman- tic segmentation capabilities, multi-scale contextual understanding, an encoder-decoder architecture, and effective feature representation. Ultimately, this CNN learns to predict XCH4 emission boundaries based on recorded urban and paddied rice extents. It is then applied to the years 2000 and 2010 to identify where historical XHC4 emission extents would likely have been based on the recorded urban and paddied rice extents for those years.
+This observational study entwines remotely sensed images (Landsat and Sentinel 5-Precursor) with machine learning algorithms – a Global Artificial Impervious Area (GAIA) algorithm and a Phenology and Pixel-Based Paddied Rice Mapping (PPPM) algorithm – to autonomously classify urban boundaries and paddied rice fields along China’s most densely populated, and agriculturally productive region: The YRD. Alter- ations in land-use patterns, i.e., the urbanization process along provinces home to the largest urban centers (like Shanghai), are examined through these dichotomies of urban boundaries and agricultural (paddied rice) boundaries. Landsat images are compiled and coupled with the GAIA algorithm and PPPM algorithm for autonomous classification. An accuracy assessment of the aglorithmically-derived classification of remotely sensed estimations for paddied rice is performed by comparing this study’s observations with with China’s provincial recordings of agricultural statistics of the sown area of rice.
+
+The scope of this observational study is further propelled by an added atmospheric dimension: Methane (CH4). Atmospheric CH4 emission concentrations are identified through sources and sinks via the proxy of column-averaged dry air mixing ratio of CH4 (XCH4), captured by the TROPOspheric Monitoring Instrument (TROPOMI) sensor onboard the Sentinel 5-Precursor (S5-P). This work overcomes temporal lag-times apparent in the image acquisition process – Landsat images available for the entire scope of the study (2000 – 2018), but S-5P images confined to the satellite’s launch in late 2017 – through an image segmentation solution of deep learning architectures. A Convolutional Neural Network (CNN) is trained, tested, and evaluated using 2018 data where all variables (urban extents, paddied rice extents, and XCH4 extents) are recorded. The architecture chosen for the CNN is DeepLabv3+, a well-suited model that combines powerful seman- tic segmentation capabilities, multi-scale contextual understanding, an encoder-decoder architecture, and effective feature representation. Ultimately, this CNN learns to predict XCH4 emission boundaries based on recorded urban and paddied rice extents. It is then applied to the years 2000 and 2010 to identify where historical XHC4 emission extents would likely have been based on the recorded urban and paddied rice extents for those years.
 
 # Project Summary
 
@@ -59,15 +61,13 @@ These research interests lie at the intersection of environmental monitoring (re
 
 ![](/assets/Case_Study.png)
 
-<a name="_page7_x72.00_y72.00"></a>Figure 1.1: Case Study
+**<p align="center">Figure 1: Case Study</p>**
 
 China houses an estimated 1.44 billion people, positioning itself as the world’s most populated country and accounting for roughly 18.47 percent of the world’s global population (worldometer, 2021). This study investigates historical trends of China’s urbanization process, a land-use change often coinciding with the conversion of agricultural land (i.e., paddied rice), through decadal segmentation over the last twenty years (2000, 2010, 2018). Urban boundaries and paddied rice fields are mapped across four spatially heterogenous provinces: Anhui, Zhejiang, Jiangsu, and Shanghai. Together, these provinces comprise the YRD – home to the largest percentage of the world’s population per region living amongst its urban metropolises (worldometer, 2021).
 
 *Anthology of the YRD: Economic Blossoming and Environmental Positioning*
 
-The emergence of the YRD as China’s current economic center stems from its natural environment and geographic positioning. The Yangtze River flows west to east, its formation beginning near the Qinghai-Tibet plateau, and extends roughly 1.8 million km2 (Zhu et al., 2020). It is China’s largest river and the third largest river in the world (Zhu et al., 2020). Regionally, the YRD is composed of 27 cities, reaches 225,065 km2, and houses a total population of 163 million people (EY Greater China, 2020). The YRD encompasses the world’s most populated city centers and generates nearly 24 percent of China’s total Gross Domestic Product (GDP) (EY Greater China, 2020). The current state of the YRD’s economic success would not be realized without the region’s environmental positioning: a region inseparable from the river and sea. Tracking the historical development of the first cities to emerge within the YRD – namely Yangzhou, Wuxi, Suzhou, Hangzhou, Ningbo, and Yin – allows for a relationship to surface between the region’s climate and its economic success. Yangzhou was at the heart of the country’s salt transport business; Wuxi produced nearly one-fourth of the country’s total rice production; Suzhou and Hangzhou emerged as textile trading havens; and Ningbo and Yin served as the country’s largest trading ports for merchants to gather (Gu et al., 2011). This natural environment construed of river networks propelled the YRD’s multi-level marketing structure (a region capable of
-
-producing unique goods of varying products at vast scales) and shaped a business model that directly altered the urban dynamics within the region. At a national level, towns within the YRD capitalized on this water accessibility – they relied on the river system as a form of transportation for boats to shuttle between markets within each town (Gu et al., 2011).
+The emergence of the YRD as China’s current economic center stems from its natural environment and geographic positioning. The Yangtze River flows west to east, its formation beginning near the Qinghai-Tibet plateau, and extends roughly 1.8 million km2 (Zhu et al., 2020). It is China’s largest river and the third largest river in the world (Zhu et al., 2020). Regionally, the YRD is composed of 27 cities, reaches 225,065 km2, and houses a total population of 163 million people (EY Greater China, 2020). The YRD encompasses the world’s most populated city centers and generates nearly 24 percent of China’s total Gross Domestic Product (GDP) (EY Greater China, 2020). The current state of the YRD’s economic success would not be realized without the region’s environmental positioning: a region inseparable from the river and sea. Tracking the historical development of the first cities to emerge within the YRD – namely Yangzhou, Wuxi, Suzhou, Hangzhou, Ningbo, and Yin – allows for a relationship to surface between the region’s climate and its economic success. Yangzhou was at the heart of the country’s salt transport business; Wuxi produced nearly one-fourth of the country’s total rice production; Suzhou and Hangzhou emerged as textile trading havens; and Ningbo and Yin served as the country’s largest trading ports for merchants to gather (Gu et al., 2011). This natural environment construed of river networks propelled the YRD’s multi-level marketing structure (a region capable of producing unique goods of varying products at vast scales) and shaped a business model that directly altered the urban dynamics within the region. At a national level, towns within the YRD capitalized on this water accessibility – they relied on the river system as a form of transportation for boats to shuttle between markets within each town (Gu et al., 2011).
 
 *Shanghai: The Global Catalyst for YRD’s Succession*
 
@@ -130,9 +130,7 @@ Human settlements are often characterized by artificial impervious areas – ind
 
 Algorithms to automatically identify artificial impervious areas by masking out vegetated regions, bodies of water, and bare lands (arid territories) were facilitated on the Google Earth Engine (GEE) platform. The complete Landsat archive obtained to identify artificial impervious areas is comprised of Landsat Thematic Mapper (TM), Enhanced Thematic Mapper Plus (ETM+), and Landsat 8 Operational Land Imager (OLI) data. Early Landsat timeseries data (images captured before the year 2000) can be thought as auxiliary data that supplements higher resolution Google Earth images with greater spatial prose, generalizing urban cores for years pre-dating high resolution Google Earth capabilities. Urban boundaries were identified for these earlier years on the premise of locally homogeneous pixels with averaged percentages of impervious area above 50 percent (Gong et al., 2019). The entirety of Landsat images for a given year were merged using the Normalized Difference Vegetation Index (NDVI) as a baseline (Gong et al., 2019). Once a yearly collection of Landsat images was compiled using this NDVI quality index, artificial impervious areas were identified using training sample units of annual timeseries data that simultaneously incorporated the modified normalized difference water index (MNDWI) and shortwave infrared (SWIR) data (Gong et al., 2019). Compiling the entire Landsat timeseries archive underscores a detachment from previous reliance on the arduous and timely collection of training samples.
 
-General uncertainties surrounding the GAIA dataset built by Gong et al., surface in earlier year observations (i.e., 1985) when Landsat images were of low availability. The quantity of cloud-free Landsat images were weighted for each year (Gong et al., 2019) – with notable increases in cloud-free images when traversing the 30-year timeframe (1985 to 2018). Uncertainties also arise when spectral signatures of 30m Landsat pixels are mixed across spatially complex surfaces, notable in urban settings (Wang and Li, 2019).
-
-Underlying Gong et al.’s GAIA dataset is the assumption that once an area is classified as urban, it remains urban. This logic relies on the established relationship between artificial areas and urban cores, witnessed in regions undergoing rapid rates of urbanization (Gong et al., 2019). Considerations for urban renewal processes like afforestation, or regenerative and reverted land-use changes (i.e., from urban to rural) were disregarded.
+General uncertainties surrounding the GAIA dataset built by Gong et al., surface in earlier year observations (i.e., 1985) when Landsat images were of low availability. The quantity of cloud-free Landsat images were weighted for each year (Gong et al., 2019) – with notable increases in cloud-free images when traversing the 30-year timeframe (1985 to 2018). Uncertainties also arise when spectral signatures of 30m Landsat pixels are mixed across spatially complex surfaces, notable in urban settings (Wang and Li, 2019). Underlying Gong et al.’s GAIA dataset is the assumption that once an area is classified as urban, it remains urban. This logic relies on the established relationship between artificial areas and urban cores, witnessed in regions undergoing rapid rates of urbanization (Gong et al., 2019). Considerations for urban renewal processes like afforestation, or regenerative and reverted land-use changes (i.e., from urban to rural) were disregarded.
 
 This GAIA dataset is open-source and available at http://data.ess.tsinghua.edu.cn.
 
@@ -151,8 +149,7 @@ Acquisition of rice phenology data – agriculturally verified dates for periods
 ### Forecasting Historical XCH4 Emission Extents: The Encoder-Decoder Architecture of DeepLabv3+ for Image Segmentation
 
 ![](/assets/DeepLabv3+.png)
-
-Figure 3.1: DeepLabv3+ Architecture
+**<p align="center">Figure 2: DeepLabv3+ Architecture</p>**
 
 The intersection of machine learning – supervised machine learning and deep learning architectures, in particular – with remotely sensed images (labeled datasets containing spatial and spectral information of objects) is realized through the encoder-decoder architecture of a CNN. Vast literature supports melding these realms (machine learning efforts for automated performances in environmental monitoring) through convolutional neural networks (CNNs) (Krizhevksy et al., 2012; LeCun et al., 1989; Cheng, G. et al., 2016; Esam, O. et al., 2016; Hu, F. et al., 2015; Mahdianpari, M. et al., 2018; Zhang, M. et al., 2018). This study utilizes the architecture of CNNs for image segmentation; i.e., 2018 data where all variables of the study are captured (urban extents, paddied rice extents, and XCH4 extents) is used for training, testing, and evaluation of semantic performance of predicting XCH4 emissions based on recorded urban boundaries and paddied rice boundaries. This model is then applied to data captured in 2000 and 2010 (where XCH4 emissions are non-existent) and works to forecast XCH4 spatial extents based on the recorded urban boundaries and paddied rice boundaries for those years.
 
@@ -183,70 +180,83 @@ DeepLabv3+ was selected for this study’s objective in forecasting historical X
 5. Prediction/Outcome: The output of the decoder module is passed through a 1x1 convolutional layer, which generates the final segmentation map. The segmentation map has the same spatial resolution as the input image and assigns a class label to each pixel in the image.
 
 # Results
-1. <a name="_page18_x72.00_y81.35"></a><a name="_page18_x72.00_y72.00"></a>YRD Urban Extent Mappings (2000, 2010, 2018): GAIA and Landsat Composites
 
-![](/assets/Urb_2000.png) ![](/assets/Urb_2010.png) ![](/assets/Urb_2018.png)
+### YRD Urban Extent Mappings (2000, 2010, 2018): GAIA Dataset and Landsat Composites
 
-(a) Urban Extent (2000) (b) Urban Extent (2010) (c) Urban Extent (2018)
+![](/assets/Urb_2000.png)
+**<p align="center">Figure 3.1: Urban Extent (2000)</p>**
+
+![](/assets/Urb_2010.png)
+**<p align="center">Figure 3.2: Urban Extent (2010)</p>**
+
+![](/assets/Urb_2018.png)
+**<p align="center">Figure 3.3: Urban Extent (2018)</p>**
 
 ![](/assets/Urb_2000to2018.png)
+**<p align="center">Figure 3.4: Total Urban Expansion (2000 - 2018)</p>**
 
-(d) Total Urban Expansion
+### Provincial Urban Extent Mappings (2000, 2010, 2018): GAIA Dataset and Landsat Composites
 
-Figure 4.1: Urban extents based on GAIA dataset and Landsat composites (2000, 2010, 2018).
+![](/assets/Prov_2000.png) 
+**<p align="center">Figure 4.1: Urban Extent (2000)</p>**
 
-2. Provincial<a name="_page18_x72.00_y444.51"></a> Urban Extent Mappings (2000, 2010, 2018): GAIA and Landsat Composites
+![](/assets/Prov_2010.png) 
+**<p align="center">Figure 4.2: Urban Extent (2010)</p>**
 
-![](/assets/Prov_2000.png) ![](/assets/Prov_2010.png) ![](/assets/Prov_2018.png)
+![](/assets/Prov_2018.png)
+**<p align="center">Figure 4.3: Urban Extent (2018)</p>**
 
-(a) Urban Extent (2000) (b) Urban Extent (2010) (c) Urban Extent (2018)
+### Paddied Rice Extent Mappings (2000, 2010, 2018): PPPM Algorithm and Landsat Composites
 
-Figure 4.2: Provincial urban extents based on GAIA dataset and Landsat composites (2000, 2010, 2018).
+![](/assets/Rice_2000.png) 
+**<p align="center">Figure 5.1: Rice Extent (2000)</p>**
 
-3. Paddied<a name="_page19_x72.00_y72.00"></a> Rice Extent Mappings (2000, 2010, 2018): PPPM and Landsat Composites
 
-![](/assets/Rice_2000.png) ![](/assets/Rice_2010.png) ![](/assets/Rice_2018.png)
+![](/assets/Rice_2010.png) 
+**<p align="center">Figure 5.2: Rice Extent (2010)</p>**
 
-(a) Rice Extent (2000) (b) Rice Extent (2010) (c) Rice Extent (2018)
+![](/assets/Rice_2018.png)
+**<p align="center">Figure 5.3: Rice Extent (2018)</p>**
 
-Figure 4.3: Paddied rice extents based on PPPM algorithm and Landsat composites (2000, 2010, 2018).
+### Overlaying Urban Extents With Paddied Rice Extents: Landsat Composites Coupled With GAIA Dataset and PPPM Algorithm (2000, 2010, 2018)
 
-4. Urban<a name="_page19_x72.00_y289.18"></a> Extents and Paddied Rice Mappings (2000, 2010, 2018)
+![](/assets/Urb_Rice_2000.png) 
+**<p align="center">Figure 6.1: Total Extents (2000)</p>**
 
-![](/assets/Urb_Rice_2000.png) ![](/assets/Urb_Rice_2010.png) ![](/assets/Urb_Rice_2018.png)
+![](/assets/Urb_Rice_2010.png) 
+**<p align="center">Figure 6.2: Total Extents (2010)</p>**
 
-1) Total Extents (2000) (b) Total Extents (2010) (c) Total Extents (2018)
+![](/assets/Urb_Rice_2018.png)
+**<p align="center">Figure 6.3: Total Extents (2018)</p>**
 
-Figure 4.4: Overlaying urban expansion with paddied rice extents: Landsat composites coupled with GAIA and PPPM (2000, 2010, 2018).
-
-5. Raw XCH4 Emission Extents: S5-P TROPOMI Measurements (2018)
+### Raw XCH4 Emission Extents: S5-P TROPOMI Measurements (2018)
 
 ![](/assets/XCH4_2018.png)
+**<p align="center">Figure 7.1: S5-P TROPOMI Estimated XCH4 Emission Spatial Distribution (2018)</p>**
 
-Spatial Autocorrelation: Hotspot Analysis of XCH4 (2018)
+XCH4 estimates captured by S-5P are represented in parts per billion (ppb) and range from 1650 to 1950. Estimates captured over this study area for the year 2018 have a range in intensity between 1805 and 1910.
 
 ![](/assets/XCH4_2018_Hotspot.png)
+**<p align="center">Figure 7.2: Spatial Autocorrelation / Hotspot Analysis of XCH4 Emission Concentrations (2018)</p>**
 
-
-Figure 4.5: S-5P TROPOMI estimated XCH4 emissions (left) and Spatial Autocorrelation assessment (right). XCH4 estimates captured by S-5P are represented in parts per billion (ppb) and range from 1650 to 1950. Estimates captured over this study area for the year 2018 have a range in intensity between 1805 and 1910.
-
-6. Comparing<a name="_page20_x72.00_y343.48"></a> Remotely Sensed Data with China’s Recorded Estimates: Urban Extents (GAIA), and Paddied Rice Extents (PPPM vs China’s Recorded Agricultural Statistics)
+### Comparing Remotely Sensed Data with China’s Recorded Estimates: Urban Extents (GAIA), and Paddied Rice Extents (PPPM vs China’s Recorded Agricultural Statistics)
 
 ![](/assets/Prov_Stats.png)
+**<p align="center">Figure 8: Provincial comparison of remotely sensed data and China’s recorded statistics (2000 to 2018)</p>**
 
-Figure 4.6: Provincial comparison of remotely sensed data and China’s recorded statistics (2000 to 2018).
+### CNN-Forecasted Historical XCH4 Emissions (2000, 2010) Based on Recorded Urban Extents and Paddied Rice Extents
 
-7. CNN-Forecasted<a name="_page21_x72.00_y72.00"></a> Historical XCH4 Emissions (2000, 2010) Based on Recorded Urban Extents and Paddied Rice Extents
+![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.018.png) 
+**<p align="center">Figure 9.1: XCH4 Predicted (2000)</p>**
 
-![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.018.png) ![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.018.png)
+![](Aspose.Words.569e3dbb-945b-44d9-a993-3db3ff2ba5e2.018.png)
+**<p align="center">Figure 9.2: XCH4 Predicted (2010)</p>**
 
-(a) XCH4 Predicted (b) XCH4 Predicted Boundaries (2000) Boundaries (2010)
-
-Figure 4.7: DeepLabV3+ estimated historical XCH4 emission boundaries for the years 2000 and 2010, based on recorded urban and paddied rice extents in the year 2018.
+DeepLabV3+ estimated historical XCH4 emission boundaries for the years 2000 and 2010, based on recorded urban and paddied rice extents in the year 2018.
 
 # Discussion
 
-### Accuracy Assessment: Remotely sensed estimations versus China’s recorded estimations
+### Accuracy Assessment: Remotely Sensed Estimations (GAIA, PPPM) versus China’s Recorded Agricultural Statistics (Sown Area of Rice)
 
 |Province|Urban Extent (GAIA)|Paddied Rice (PPPM)|Sown Area of Rice|
 | - | - | - | - |
@@ -263,7 +273,7 @@ Figure 4.7: DeepLabV3+ estimated historical XCH4 emission boundaries for the yea
 |Anhui (2018)|10,217|17,430|25,450|
 |Jiangsu (2018)|19,430|16,038|22,150|
 
-Table 1: Provincial Comparison (2000 - 2018) by km2: Urban Extent (GAIA), Paddied Rice Extent (PPPM), and China’s Recorded Agricultural Statistics (Sown Area)
+**<p align="center">Table 1: Provincial Comparisons (2000 - 2018) by km2</p>**
 
 ### Urban Expansion Analysis:
 
@@ -309,7 +319,7 @@ Google Colab Jupyter Notebook (DeepLabv3+ Architecture): https://colab.research.
 
 # References
 
-<a name="_page26_x72.00_y72.00"></a>Aitken, Kyle, et al. “Understanding How Encoder-Decoder Architectures Attend.” Advances in Neural Information Processing Systems, edited by M. Ranzato et al., vol. 34, Curran Associates, Inc., 2021, pp. 22184–95, https://proceedings.neurips.cc/paper/2021/file/ba3c736667394d5082f86f28aef38107- Paper.pdf.
+Aitken, Kyle, et al. “Understanding How Encoder-Decoder Architectures Attend.” Advances in Neural Information Processing Systems, edited by M. Ranzato et al., vol. 34, Curran Associates, Inc., 2021, pp. 22184–95, https://proceedings.neurips.cc/paper/2021/file/ba3c736667394d5082f86f28aef38107- Paper.pdf.
 
 Asilo, Sonia, et al. “Complementarity of Two Rice Mapping Approaches: Characterizing Strata Mapped by Hypertemporal MODIS and Rice Paddy Identification Using Multitemporal SAR.” Remote Sensing, vol. 6, no. 12, Dec. 2014, pp. 12789–814. DOI.org (Crossref), https://doi.org/10.3390/rs61212789.
 

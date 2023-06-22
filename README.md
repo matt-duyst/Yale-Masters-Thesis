@@ -241,7 +241,7 @@ XCH4 estimates captured by S-5P are represented in parts per billion (ppb) and r
 
 ### Comparing Remotely Sensed Data with China’s Recorded Estimates: Urban Extents (GAIA), and Paddied Rice Extents (PPPM vs China’s Recorded Agricultural Statistics)
 
-![](/assets/Prov_Stats.png)
+![](/assets/Provincial_Graph.png)
 **<p align="center">Figure 8: Provincial comparison of remotely sensed data and China’s recorded statistics (2000 to 2018)</p>**
 
 ### CNN-Forecasted Historical XCH4 Emissions (2000, 2010) Based on Recorded Urban Extents and Paddied Rice Extents

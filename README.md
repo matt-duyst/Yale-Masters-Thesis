@@ -448,7 +448,7 @@ This comparative analysis highlights both the strengths and limitations of remot
 
 **Table 1: Provincial Comparisons of Urban Extent, Paddied Rice, and Sown Area of Rice (2000-2018) in km²</p>**
 
-#### Urban Expansion Analysis
+### Urban Expansion Analysis
 
 The urban growth trajectory across the YRD over nearly two decades highlights rapid and unprecedented land-use changes. In 2000, artificial impervious areas totaled 8,297 km², with the majority concentrated in Jiangsu (3,008 km²), Anhui (2,326 km²), Zhejiang (1,752 km²), and Shanghai (1,211 km²). By 2010, these extents nearly tripled to 24,830 km², driven by dramatic increases in Jiangsu (10,042 km²) and Zhejiang (6,731 km²). Shanghai and Anhui followed with 3,310 km² and 4,748 km², respectively.
 
@@ -456,7 +456,7 @@ By 2018, artificial impervious areas had nearly doubled again, reaching a total 
 
 This analysis demonstrates the strengths of GAIA-derived urban extents in capturing overarching trends but also highlights the importance of considering provincial scales. Relying solely on impervious area growth may obscure nuanced dynamics, such as land-use policies or urban renewal processes, which merit further investigation.
 
-#### PPPM-Derived Paddied Rice vs. Sown Area of Rice Statistics
+### PPPM-Derived Paddied Rice vs. Sown Area of Rice Statistics
 
 In contrast, the PPPM algorithm significantly underestimates paddied rice extents in Shanghai. For example, while PPPM-derived estimates and recorded statistics were nearly identical in 2000 (1,123 km² vs. 1,130 km²), the 2010 and 2018 estimates diverge, with the PPPM algorithm capturing approximately half of the recorded sown area. These underestimations may stem from Shanghai’s small geographic area and high urban density, which complicates spectral classification. Despite these limitations, the alignment between satellite-derived estimates and recorded statistics demonstrates the algorithm’s utility for large-scale assessments.
 
@@ -464,7 +464,7 @@ The algorithm underestimates rice extents in Shanghai and Zhejiang. For Shanghai
 
 Despite these limitations, the PPPM algorithm demonstrates significant utility in capturing broad-scale trends. Its accuracy in Anhui and Jiangsu reinforces its application for monitoring agricultural systems, while its challenges in urbanized provinces highlight areas for refinement. Integrating additional datasets, like high-resolution SAR imagery, might enhance the model’s ability to delineate agricultural extents across complex environments.
 
-#### Spatial Assessment of XCH<sub>4</sub> Emission Concentrations
+### Spatial Assessment of XCH<sub>4</sub> Emission Concentrations
 
 The spatial analysis of XCH<sub>4</sub> concentrations derived from S-5P TROPOMI data reveals statistically significant clustering, as evidenced by a Moran’s Index of 0.46 and a z-score of 276.31. These metrics confirm a less than 1% likelihood of random spatial patterns, underscoring the structured interplay of emission sources. Hotspots of high XCH<sub>4</sub> concentrations are concentrated in agriculturally intensive areas – notably paddied rice fields in northern Anhui, Jiangsu, and northeastern Zhejiang. Urban hotspots, such as central Shanghai and southwestern Zhejiang, further highlight the contribution of urban emissions, potentially linked to NGVs and industrial activities.
 
@@ -472,7 +472,7 @@ A Moran’s Index of 0.46 and a z-score of 276.31 confirm statistically signific
 
 The clustering patterns emphasize the dual role of agriculture and urbanization in shaping regional CH<sub>4</sub> emissions. The alignment of hotspot regions with areas of intensive land-use activity corroborates the hypothesis of anthropogenic drivers behind emission patterns. By establishing these spatial relationships, the study provides potential insights for emission mitigation strategies and supports the development of region-specific policies along the YRD.
 
-#### Merging Remote Sensing and Machine Learning
+### Merging Remote Sensing and Machine Learning
 Using the DeepLabv3+ architecture, this study forecasts historical XCH<sub>4</sub> emission boundaries for 2000 and 2010. By inputting urban and paddied rice boundaries from those years, the model generates segmentation maps to predict CH<sub>4</sub> emissions. Although 2018 data serves as the sole reference for training, the model demonstrates strong potential for reconstructing historical CH<sub>4</sub> patterns, paving the way for deeper considerations into the region’s emission trends.
 
 The predicted XCH<sub>4</sub> emission maps align with observed urban and agricultural dynamics, offering valuable context for interpreting S-5P’s 2018 data. This forecasting approach also underscores the potential for integrating satellite imagery with machine learning to address temporal data gaps.

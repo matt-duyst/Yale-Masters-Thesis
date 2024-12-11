@@ -333,28 +333,28 @@ The DeepLabv3+ model addresses a critical challenge: predicting historical CH<su
 
 ### Advantages of DeepLabv3+ for XCH<sub>4</sub> Prediction
 
-#### Granularity and Resolution  
-The decoder’s skip connections recover fine-grained details, enabling high-resolution predictions of CH<sub>4</sub> boundaries.
+- #### Granularity and Resolution
+  The decoder’s skip connections recover fine-grained details, enabling high-resolution predictions of CH<sub>4</sub> boundaries.
 
-#### Multi-Scale Contextual Understanding  
-The ASPP module captures spatial patterns across varying scales, ensuring accurate segmentation of complex inputs.
+- #### Multi-Scale Contextual Understanding
+  The ASPP module captures spatial patterns across varying scales, ensuring accurate segmentation of complex inputs.
 
-#### Robust Generalization  
-Random masking during training improves the model’s ability to generalize to unseen data, vital for historical forecasting.
+- #### Robust Generalization
+  Random masking during training improves the model’s ability to generalize to unseen data, vital for historical forecasting.
 
-#### Scalability  
-DeepLabv3+ effectively processes large datasets with diverse input features, maintaining efficiency and accuracy.
+- #### Scalability
+  DeepLabv3+ effectively processes large datasets with diverse input features, maintaining efficiency and accuracy.
 
 ### Limitations and Considerations
 
-#### Spatial and Temporal Constraints  
-While DeepLabv3+ compensates for missing XCH<sub>4</sub> data, the reliance on 2018 as the training year introduces potential biases tied to that specific temporal snapshot.
+- #### Spatial and Temporal Constraints
+  While DeepLabv3+ compensates for missing XCH<sub>4</sub> data, the reliance on 2018 as the training year introduces potential biases tied to that specific temporal snapshot.
 
-#### Resolution Disparities  
-The difference in resolution between Landsat (30m) and Sentinel-5P (7 km²) is mitigated by the scale invariance of CNNs but may influence fine-scale accuracy.
+- #### Resolution Disparities
+  The difference in resolution between Landsat (30m) and Sentinel-5P (7 km²) is mitigated by the scale invariance of CNNs but may influence fine-scale accuracy.
 
-#### Data Representation  
-Variability in spectral signatures and masking of heterogeneous regions could affect the consistency of reconstructed outputs.
+- #### Data Representation
+  Variability in spectral signatures and masking of heterogeneous regions could affect the consistency of reconstructed outputs.
 
 By leveraging the encoder-decoder architecture of DeepLabv3+, this study successfully predicts historical XCH<sub>4</sub> emissions for 2000 and 2010 based on urban and paddied rice boundaries. The integration of high-resolution imagery with advanced semantic segmentation techniques underscores the transformative potential of deep learning in environmental monitoring, offering new avenues for addressing data gaps in spatiotemporal analyses.
 

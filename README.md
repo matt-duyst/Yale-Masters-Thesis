@@ -513,7 +513,7 @@ This comparative analysis highlights both the strengths and limitations of remot
 | **Anhui**      | 2018 | 10,217              | 17,430              | 25,450            |
 | **Jiangsu**    | 2018 | 19,430              | 16,038              | 22,150            |
 
-**<p align="center">Table 1: Provincial Comparisons (2000 - 2018) in km²</p>**
+**Table 1: Provincial Comparisons of Urban Extent, Paddied Rice, and Sown Area of Rice (2000-2018) in km²</p>**
 
 #### Urban Expansion Analysis
 

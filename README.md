@@ -181,38 +181,27 @@ As the world’s largest manufacturer of NGVs, China faces a growing challenge i
 ## Objectives and Hypotheses
 
 ### Objectives
-This study aims to address critical gaps in understanding the spatiotemporal dynamics of urbanization, agriculture, and CH<sub>4</sub> emissions in the YRD by pursuing the following objectives:
 
-**(1) Urbanization Dynamics**  
-Quantify and characterize the spatiotemporal evolution of urban boundaries across the YRD over two decades (2000, 2010, 2018) using Landsat imagery composites and Global Artificial Impervious Area (GAIA) data.
+This study aims to address gaps in understanding the spatiotemporal dynamics of urbanization, agriculture, and CH<sub>4</sub> emissions in the YRD by pursuing the following objectives:
 
-**(2) Agricultural Dynamics**  
-Quantify and characterize changes in paddied rice extents within the YRD over the same period (2000, 2010, 2018) by applying a Phenology and Pixel-Based Paddied Rice Mapping (PPPM) algorithm to Landsat imagery composites.
+- #### Urbanization Dynamics  
+  Quantify and characterize the spatiotemporal evolution of urban boundaries across the YRD over two decades (2000, 2010, 2018) using Landsat imagery composites and Global Artificial Impervious Area (GAIA) data.
 
-**(3) Hotspot Clustering of XCH<sub>4</sub>**  
-Identify *statistically significant clusters* of atmospheric CH<sub>4</sub> emissions (XCH<sub>4</sub>) within the YRD for 2018 using spatial autocorrelation analyses, including hotspot detection.
+- #### Agricultural Dynamics  
+  Quantify and characterize changes in paddied rice extents within the YRD over the same period (2000, 2010, 2018) by applying a Phenology and Pixel-Based Paddied Rice Mapping (PPPM) algorithm to Landsat imagery composites.
 
-**(4) Historical Projections of XCH<sub>4</sub>**  
-Construct a DeepLabv3+ CNN to project historical XCH<sub>4</sub> emission distributions (2000, 2010) based on urban boundaries and paddied rice extents recorded during those years.
+- #### Hotspot Clustering of XCH<sub>4</sub>  
+  Identify statistically significant clusters of atmospheric CH<sub>4</sub> emissions (XCH<sub>4</sub>) within the YRD for 2018 using spatial autocorrelation analyses, including hotspot detection.
 
-### Questions Driving the Study
-Building upon the objectives, this study seeks to answer the following key research questions:
-
-**(1) Remote Sensing and Machine Learning Applications**  
-Can remote sensing and supervised machine learning techniques accurately capture spatiotemporal tradeoffs between urban expansion and agricultural extent (paddied rice fields)?
-
-**(2) Urbanization Rates and CH<sub>4</sub> Emissions**  
-At what rate has urbanization occurred along the YRD over the past two decades, and how might these patterns influence the region’s atmospheric CH<sub>4</sub> emissions in the future?
-
-**(3) CNN Projections for Historical CH<sub>4</sub> Emissions**  
-Can a CNN trained on urban boundaries and paddied rice extents output accurate projections of XCH<sub>4</sub> emission boundaries for historical years (2000 and 2010) along the YRD?
+- #### Historical Projections of XCH<sub>4</sub>  
+  Construct a DeepLabv3+ CNN to project historical XCH<sub>4</sub> emission distributions (2000, 2010) based on urban boundaries and paddied rice extents recorded during those years.
 
 ### Hypotheses
 
-**Hypothesis 1**  
+#### Hypothesis 1  
 Atmospheric CH<sub>4</sub> emissions from paddied rice fields are expected to be lower than previously recorded levels. This hypothesis posits that continued urban expansion has led to a significant reduction in agricultural land, including paddied rice fields, resulting in decreased biogenic CH<sub>4</sub> emissions. Trends in atmospheric CH<sub>4</sub> concentrations might closely align with the proportion of agricultural land converted to urban development, underscoring the importance of accurately characterizing urbanization rates along the YRD.
 
-**Hypothesis 2**  
+#### Hypothesis 2  
 Urban-related atmospheric CH<sub>4</sub> emissions are expected to exceed historical levels. Continued population growth across the YRD has driven an exponential increase in NGV production, a trend compounded by persistent infrastructure deficiencies, such as faulty retrofitting. These factors are anticipated to contribute to higher CH<sub>4</sub> emissions from urban centers, reflecting the region’s evolving transportation and energy demands.
 
 ---
@@ -221,14 +210,14 @@ Urban-related atmospheric CH<sub>4</sub> emissions are expected to exceed histor
 
 This study employs a multi-method approach to address its three core objectives, integrating advanced remote sensing techniques, supervised classification algorithms, and deep learning methods:
 
-**(1) Mapping Urban Land Expansion**  
-Urban boundaries are mapped using Landsat imagery and Global Artificial Impervious Area (GAIA) data, focusing on the YRD’s urbanization dynamics over three temporal milestones: 2000, 2010, and 2018.
+- #### Mapping Urban Land Expansion
+  Urban boundaries are mapped using Landsat imagery and Global Artificial Impervious Area (GAIA) data, focusing on the YRD’s urbanization dynamics over three temporal milestones: 2000, 2010, and 2018.
 
-**(2) Mapping Paddied Rice Distributions**  
-Paddied rice extents are identified using Landsat imagery and a Phenology and Pixel-Based Paddied Rice Mapping (PPPM) algorithm, which incorporates phenological characteristics and conditional thresholds (e.g., elevation, rice cultivation calendar).
+- #### Mapping Paddied Rice Distributions
+  Paddied rice extents are identified using Landsat imagery and a Phenology and Pixel-Based Paddied Rice Mapping (PPPM) algorithm, which incorporates phenological characteristics and conditional thresholds (e.g., elevation, rice cultivation calendar).
 
-**(3) Modeling Historical XCH<sub>4</sub> Emissions**  
-A Convolutional Neural Network (CNN) built on the DeepLabv3+ architecture is used to predict historical spatial distributions of XCH<sub>4</sub> emissions for 2000 and 2010 based on urban and paddied rice extents.
+- #### Modeling Historical XCH<sub>4</sub> Emissions
+  A Convolutional Neural Network (CNN) built on the DeepLabv3+ architecture is used to predict historical spatial distributions of XCH<sub>4</sub> emissions for 2000 and 2010 based on urban and paddied rice extents.
 
 ### Quantifying and Characterizing Spatiotemporal Dynamics of Urbanization (2000, 2010, 2018) Using GAIA Data:
 
@@ -246,27 +235,27 @@ Algorithms within the GAIA framework mask vegetated regions, water bodies, and b
 
 The GAIA dataset enables comprehensive mapping of the YRD’s urban growth by addressing key limitations of earlier approaches:
 
-**(1) Temporal Consistency**  
-GAIA provides annual urban boundary updates over 34 years (1985–2018), capturing both short-term trends and long-term patterns.
+- #### Temporal Consistency
+   GAIA provides annual urban boundary updates over 34 years (1985–2018), capturing both short-term trends and long-term patterns.
 
-**(2) Spatial Precision**  
-By utilizing 30-meter resolution imagery, GAIA ensures detailed representations of urban boundaries, avoiding the coarse spatial granularity of previous products.
+- #### Spatial Precision
+  By utilizing 30-meter resolution imagery, GAIA ensures detailed representations of urban boundaries, avoiding the coarse spatial granularity of previous products.
 
-**(3) Streamlined Automation**  
-GAIA’s reliance on GEE and spectral indices reduces the time and resource intensity traditionally associated with training sample collection (Yang et al., 2017).
+- #### Streamlined Automation
+  GAIA’s reliance on GEE and spectral indices reduces the time and resource intensity traditionally associated with training sample collection (Yang et al., 2017).
 
 #### Limitations and Considerations
 
 While GAIA’s methodology represents a significant advance, certain limitations persist:
 
-**(1) Early-Year Data Availability**  
-The availability of cloud-free Landsat images was limited in earlier years (e.g., 1985), potentially reducing classification accuracy for these time points.
+- #### Early-Year Data Availability
+  The availability of cloud-free Landsat images was limited in earlier years (e.g., 1985), potentially reducing classification accuracy for these time points.
 
-**(2) Spectral Mixing in Urban Areas**  
-Mixed spectral signatures within 30-meter pixels can complicate classification in spatially complex urban settings (Wang and Li, 2019).
+- #### Spectral Mixing in Urban Areas
+    Mixed spectral signatures within 30-meter pixels can complicate classification in spatially complex urban settings (Wang and Li, 2019).
 
-**(3) Urban Permanence Assumption**  
-GAIA assumes that once an area is classified as urban, it remains urban. This disregards processes like afforestation or land-use reversion from urban to rural, which may occur in certain contexts.
+- #### Urban Permanence Assumption
+  GAIA assumes that once an area is classified as urban, it remains urban. This disregards processes like afforestation or land-use reversion from urban to rural, which may occur in certain contexts.
 
 #### Relevance to the YRD
 
@@ -304,11 +293,11 @@ Validation assessments were conducted by comparing paddied rice extents derived 
 
 While the PPPM algorithm advances rice mapping capabilities, certain limitations persist:
 
-**(1) Flooding Signal Ambiguity**  
-Similar flooding signals from aquatic crops, such as duckweed, may lead to minor misclassifications during transplant phases (Zhu et al., 2021). Incorporating additional phenological features reduces this risk but does not entirely eliminate it.
+- #### Flooding Signal Ambiguity
+  Similar flooding signals from aquatic crops, such as duckweed, may lead to minor misclassifications during transplant phases (Zhu et al., 2021). Incorporating additional phenological features reduces this risk but does not entirely eliminate it.
 
-**(2) Phenological Data Dependency**  
-The success of the algorithm heavily relies on the accuracy of phenological data, particularly for heterogeneous regions with overlapping cropping systems.
+- #### Phenological Data Dependency
+  The success of the algorithm heavily relies on the accuracy of phenological data, particularly for heterogeneous regions with overlapping cropping systems.
 
 
 Despite these challenges, the PPPM algorithm offers a sophisticated approach to capturing rice dynamics, particularly in a region like the YRD, where agricultural and urban systems intersect. By integrating Landsat imagery with phenological characteristics, the PPPM algorithm bridges gaps in spatiotemporal resolution, providing a framework for mapping paddied rice systems.
@@ -332,24 +321,26 @@ In this study, Landsat imagery (30m resolution) containing urban and paddied ric
 
 DeepLabv3+ was selected for its ability to generate high-resolution segmentation maps by combining multi-scale contextual information and fine-grained details. The architecture’s key components include:
 
-**(1) Encoder Module**  
-Features are extracted using ResNet50 as the backbone network, pre-trained on ImageNet. The encoder utilizes atrous convolutions with varying dilation rates in the Atrous Spatial Pyramid Pooling (ASPP) module to capture multi-scale contextual features.
+- #### Encoder Module
+  Features are extracted using ResNet50 as the backbone network, pre-trained on ImageNet. The encoder utilizes atrous convolutions with varying dilation rates in the Atrous Spatial Pyramid Pooling (ASPP) module to capture multi-scale contextual features.
 
-**(2) Decoder Module with Skip Connections**  
-The decoder refines segmentation maps by merging high-level features from the ASPP module with low-level features from earlier layers of the encoder. Skip connections recover granular details, enhancing object delineation.
+- #### Decoder Module with Skip Connections
+    The decoder refines segmentation maps by merging high-level features from the ASPP module with low-level features from earlier layers of the encoder. Skip connections recover granular details, enhancing object delineation.
 
-**(3) Output**  
-The final segmentation map assigns a class label to each pixel, predicting XCH<sub>4</sub> emission boundaries based on the input features.
+- #### Output
+  The final segmentation map assigns a class label to each pixel, predicting XCH<sub>4</sub> emission boundaries based on the input features.
 
 ### Training Process
 
-**(1)** The training set (2018 data) consists of 5,000 randomly cropped images spanning Anhui, Zhejiang, and Shanghai. Each cropping includes four layers: urban extents, paddied rice extents, XCH<sub>4</sub> boundaries, and a satellite basemap.
+The training set (2018 data) consists of 5,000 randomly cropped images spanning Anhui, Zhejiang, and Shanghai. Each cropping includes four layers: urban extents, paddied rice extents, XCH<sub>4</sub> boundaries, and a satellite basemap.
 
-**(2)** The testing set, covering Jiangsu, includes 1,000 cropped images. During training, the model minimizes mean squared error (MSE) between predicted and ground-truth XCH<sub>4</sub> boundaries.
+### Testing Process
+
+The testing set, covering Jiangsu, includes 1,000 cropped images. During training, the model minimizes mean squared error (MSE) between predicted and ground-truth XCH<sub>4</sub> boundaries.
 
 ### Evaluation
 
-**(1)** After training, the model is evaluated on the testing set to measure its ability to generalize predictions. Metrics such as MSE assess segmentation accuracy, ensuring the model’s reliability for historical forecasting of CH<sub>4</sub> emissions.
+After training, the model is evaluated on the testing set to measure its ability to generalize predictions. Metrics such as MSE assess segmentation accuracy, ensuring the model’s reliability for historical forecasting of CH<sub>4</sub> emissions.
 
 ### Application to Forecast Historical XCH<sub>4</sub> Emissions
 
@@ -357,27 +348,27 @@ The DeepLabv3+ model addresses a critical challenge: predicting historical CH<su
 
 ### Advantages of DeepLabv3+ for XCH<sub>4</sub> Prediction
 
-**(1) Granularity and Resolution**  
+#### Granularity and Resolution  
 The decoder’s skip connections recover fine-grained details, enabling high-resolution predictions of CH<sub>4</sub> boundaries.
 
-**(2) Multi-Scale Contextual Understanding**  
+#### Multi-Scale Contextual Understanding  
 The ASPP module captures spatial patterns across varying scales, ensuring accurate segmentation of complex inputs.
 
-**(3) Robust Generalization**  
+#### Robust Generalization  
 Random masking during training improves the model’s ability to generalize to unseen data, vital for historical forecasting.
 
-**(4) Scalability**  
+#### Scalability  
 DeepLabv3+ effectively processes large datasets with diverse input features, maintaining efficiency and accuracy.
 
 ### Limitations and Considerations
 
-**(1) Spatial and Temporal Constraints**  
+#### Spatial and Temporal Constraints  
 While DeepLabv3+ compensates for missing XCH<sub>4</sub> data, the reliance on 2018 as the training year introduces potential biases tied to that specific temporal snapshot.
 
-**(2) Resolution Disparities**  
+#### Resolution Disparities  
 The difference in resolution between Landsat (30m) and Sentinel-5P (7 km²) is mitigated by the scale invariance of CNNs but may influence fine-scale accuracy.
 
-**(3) Data Representation**  
+#### Data Representation  
 Variability in spectral signatures and masking of heterogeneous regions could affect the consistency of reconstructed outputs.
 
 By leveraging the encoder-decoder architecture of DeepLabv3+, this study successfully predicts historical XCH<sub>4</sub> emissions for 2000 and 2010 based on urban and paddied rice boundaries. The integration of high-resolution imagery with advanced semantic segmentation techniques underscores the transformative potential of deep learning in environmental monitoring, offering new avenues for addressing data gaps in spatiotemporal analyses.
@@ -550,13 +541,13 @@ This study exemplifies the transformative potential of merging remote sensing wi
 
 While this study advances the understanding of CH<sub>4</sub> emissions along the YRD, a few limitations warrant discussion:
 
-**(1) Data Availability**  
+#### Data Availability  
 Temporal gaps in satellite data, particularly the absence of pre-2018 XCH<sub>4</sub> observations, limit direct validation of historical predictions.
 
-**(2) Emission Representation**  
+#### Emission Representation  
 China’s agricultural statistics omit contributions from NGV-emitted CH<sub>4</sub>, which may result in underreported national emissions.
 
-**(3) Consistency Assumptions**  
+#### Consistency Assumptions  
 The model assumes static relationships between land use and CH<sub>4</sub> emissions over time, which may not fully account for evolving emission dynamics.
 
 Future work could integrate additional data sources, such as provincial CH<sub>4</sub> inventories or high-resolution SAR data, to refine predictions and validate historical trends. Enhancements in model architecture, including advanced feature engineering and multi-sensor data fusion, could further improve segmentation accuracy and computational efficiency.

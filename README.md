@@ -526,14 +526,14 @@ This study exemplifies the transformative potential of merging remote sensing wi
 
 While this study advances the understanding of CH<sub>4</sub> emissions along the YRD, a few limitations warrant discussion:
 
-#### Data Availability  
-Temporal gaps in satellite data, particularly the absence of pre-2018 XCH<sub>4</sub> observations, limit direct validation of historical predictions.
+- #### Data Availability
+  Temporal gaps in satellite data, particularly the absence of pre-2018 XCH<sub>4</sub> observations, limit direct validation of historical predictions.
 
-#### Emission Representation  
-China’s agricultural statistics omit contributions from NGV-emitted CH<sub>4</sub>, which may result in underreported national emissions.
+- #### Emission Representation
+   China’s agricultural statistics omit contributions from NGV-emitted CH<sub>4</sub>, which may result in underreported national emissions.
 
-#### Consistency Assumptions  
-The model assumes static relationships between land use and CH<sub>4</sub> emissions over time, which may not fully account for evolving emission dynamics.
+- #### Consistency Assumptions
+   The model assumes static relationships between land use and CH<sub>4</sub> emissions over time, which may not fully account for evolving emission dynamics.
 
 Future work could integrate additional data sources, such as provincial CH<sub>4</sub> inventories or high-resolution SAR data, to refine predictions and validate historical trends. Enhancements in model architecture, including advanced feature engineering and multi-sensor data fusion, could further improve segmentation accuracy and computational efficiency.
 

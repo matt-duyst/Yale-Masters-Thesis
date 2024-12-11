@@ -1,43 +1,28 @@
 # Urban-Methane Transfers (2000 - 2018): A Convolutional Neural Network (CNN) Approach at Forecasting Historical XCH<sub>4</sub> Emissions through Urban Boundaries and Paddied Rice Extents Along China's YRD
 
 ## Overview
-This repository presents the findings and methodologies from a comprehensive study integrating remote sensing and machine learning to understand atmospheric CH<sub>4</sub> emissions in China's Yangtze River Delta (YRD). The project bridges gaps in historical data using Convolutional Neural Networks (CNNs) to reconstruct emission distributions, providing insights into the interplay between urban expansion, agriculture, and greenhouse gas (GHG) dynamics.
+This repository presents the findings and methodologies from a comprehensive study integrating remote sensing and machine learning to understand atmospheric CH<sub>4</sub> emissions in China's Yangtze River Delta (YRD). The project bridges gaps in historical data using Convolutional Neural Networks (CNNs) to reconstruct emission distributions, providing insights into the interplay between urban expansion, rice cultivation, and greenhouse gas (GHG) emissions.
 
 ## Table of Contents
 
 - **Abstract**
-- **Project Summary**
+- **Introduction**
 - **Objectives and Hypotheses**
 - **Methodology**
-  - **Spatiotemporal Analysis of Urban Expansion Using GAIA Data**  
-    Comprehensive analysis of urban boundary transformations across the Yangtze River Delta (YRD) using the Global Artificial Impervious Area (GAIA) dataset, derived from high-resolution Landsat imagery.  
-  - **Mapping Paddied Rice Extents with the PPPM Algorithm**  
-    Phenological modeling using the Phenology and Pixel-Based Paddied Rice Mapping (PPPM) algorithm to delineate and monitor paddied rice fields, leveraging Landsat imagery and seasonal cropping signals to capture agricultural trends.  
-  - **Reconstructing Historical XCH<sub>4</sub> Emissions with DeepLabv3+**  
-    Implementation of a Convolutional Neural Network (CNN) based on the DeepLabv3+ architecture for semantic segmentation, integrating urban and agricultural extents with Sentinel-5P TROPOMI data to predict historical methane (CH<sub>4</sub>) emissions.  
+  - **Urban Expansion Analysis:** Utilizing GAIA data to map urban growth in the YRD.
+  - **Paddied Rice Extent Mapping:** Applying the PPPM algorithm for agricultural monitoring.
+  - **Historical XCH<sub>4</sub> Emission Reconstruction:** Using DeepLabv3+ for spatiotemporal methane analysis.
 - **Results**
-  - **Quantifying Urban Growth Using GAIA Data**  
-    Spatial analysis of impervious surfaces in the YRD, highlighting urbanization trends and growth patterns from 2000 to 2018.  
-  - **Characterizing Paddied Rice Distributions Using PPPM**  
-    Mapping of paddied rice extents over two decades, emphasizing shifts in agricultural land use driven by urban encroachment.  
-  - **Integrating Urban Boundaries and Paddied Rice Extents**  
-    Overlaying urban and agricultural extents to assess land-use tradeoffs and their implications for CH<sub>4</sub> emissions.  
-  - **Analyzing Spatial Patterns of XCH<sub>4</sub> Emissions**  
-    Baseline spatial distribution of methane emissions using Sentinel-5P TROPOMI data, identifying key urban and agricultural hotspots.  
-  - **Validation of Remote Sensing Outputs**  
-    Comparative assessment of GAIA and PPPM outputs against recorded agricultural and urban statistics, evaluating accuracy and methodological strengths.  
-  - **Reconstructing Historical XCH<sub>4</sub> Emissions**  
-    Temporal extrapolation of methane emission patterns for 2000 and 2010 using CNN-based predictions.  
+  - **Urbanization Trends:** Quantifying urban growth across the YRD.
+  - **Agricultural Land Dynamics:** Mapping and characterizing changes in paddied rice extents.
+  - **Integrated Land-Use Analysis:** Assessing urban-agricultural tradeoffs and implications.
+  - **XCH<sub>4</sub> Emission Patterns:** Spatial trends and historical reconstructions of methane (CH<sub>4</sub>) hotspots.
 - **Discussion**
-  - **Urban Expansion Trends and Drivers**  
-    Analysis of rapid urbanization across the YRD, exploring land-use change drivers and regional disparities in development.  
-  - **Agricultural Persistence and Rice Extent Trends**
-    Examination of paddied rice extent dynamics across the YRD over two decades. 
-  - **Spatial Trends in Methane Emissions**  
-    Hotspot analysis and spatial autocorrelation of XCH<sub>4</sub> emissions, linking urbanization, agriculture, and atmospheric dynamics.  
-  - **Limitations and Recommendations**  
-    Discussion of methodological constraints and recommendations for integrating multi-sensor data and refining environmental monitoring frameworks.  
-- **Open-Source Code Availability**
+  - **Urban and Agricultural Dynamics:** Key drivers, trends, and implications of land-use changes.
+  - **Methane Emission Insights:** Linking urbanization, agriculture, and atmospheric CH<sub>4</sub>.
+  - **Limitations and Future Directions:** Methodological challenges and recommendations for advancement.
+- **Conclusion**
+- **Code and Data Availability**
 - **References**
 
 ---

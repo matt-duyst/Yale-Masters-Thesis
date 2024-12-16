@@ -366,12 +366,12 @@ This map overlays urban boundaries and paddied rice extents within the YRD for 2
 
 ### Raw XCH<sub>4</sub> Emission Extents: S5-P TROPOMI Measurements (2018)
 
-![Spatial Distribution of XCH<sub>4</sub> Emissions Across the YRD (2018)](/assets/XCH_4_2018.png)
+![Spatial Distribution of XCH<sub>4</sub> Emissions Across the YRD (2018)](/assets/XCH4_2018.png)
 
 **<p align="center">Figure 16: Spatial Distribution of XCH<sub>4</sub> Emissions Across the YRD (2018)</p>**
 This map depicts raw XCH<sub>4</sub> emissions across the YRD for 2018, derived from the Sentinel-5 Precursor’s (S-5P) TROPOspheric Monitoring Instrument (TROPOMI). Emission intensities are represented on a gradient scale, with darker tones signifying higher CH<sub>4</sub> concentrations.  The dataset's spatial resolution of 7 km² enables the identification of CH<sub>4</sub> hotspots and spatial variability across the four provinces. Noticeable clusters of elevated XCH<sub>4</sub> concentrations align with densely urbanized areas such as Shanghai and significant paddied rice regions in northern Anhui and Jiangsu. These spatial patterns provide foundational insights into the interplay between urbanization, agricultural activity, and atmospheric CH<sub>4</sub> emissions, forming a basis for emission monitoring.
 
-![Hotspot Analysis of XCH<sub>4</sub> Emissions Using Spatial Autocorrelation (2018)](/assets/XCH<sub>4</sub>_2018_Hotspot.png)
+![Hotspot Analysis of XCH<sub>4</sub> Emissions Using Spatial Autocorrelation (2018)](/assets/XCH4_2018_Hotspot.png)
 
 **<p align="center">Figure 17: Hotspot Analysis of XCH<sub>4</sub> Emissions Using Spatial Autocorrelation (2018)</p>**
 This map presents the results of a hotspot analysis on XCH<sub>4</sub> emissions across the YRD for 2018, derived from Sentinel-5 Precursor’s (S-5P) TROPOspheric Monitoring Instrument (TROPOMI). Using the Getis-Ord Gi* statistic, the analysis identifies statistically significant clusters of high (hotspots) and low (cold spots) XCH<sub>4</sub> values. Hotspots are concentrated in northern Anhui, Jiangsu, and Zhejiang – areas dominated by extensive paddied rice cultivation – and in urban centers like Shanghai. Cold spots, characterized by lower CH<sub>4</sub> emissions, are found in regions with less intensive agricultural or urban activity. This spatial analysis underscores the strong link between elevated XCH<sub>4</sub> concentrations and anthropogenic sources, including emissions from flooded rice paddies and urban activities, such as the proliferation of NGVs. The visualization offers a detailed, spatially explicit understanding of CH<sub>4</sub> distribution, highlighting key sources and sinks.

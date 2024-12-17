@@ -1,7 +1,7 @@
 # Urban-Methane Transfers (2000 - 2018): A Convolutional Neural Network (CNN) Approach at Forecasting Historical XCH<sub>4</sub> Emissions through Urban Boundaries and Paddied Rice Extents Along China's YRD
 
 ## Overview
-This repository presents the findings and methodologies from a comprehensive study integrating remote sensing and machine learning to understand atmospheric methane (CH<sub>4</sub>) emissions in China's Yangtze River Delta (YRD). The project bridges gaps in historical data using Convolutional Neural Networks (CNNs) to reconstruct emission distributions, providing insights into the interplay between urban expansion, rice cultivation, and greenhouse gas (GHG) emissions.
+This repository presents the findings and methodologies from a comprehensive study integrating remote sensing and machine learning to understand atmospheric methane (CH<sub>4</sub>) emissions in China's Yangtze River Delta (YRD). The project bridges gaps in historical data using Convolutional Neural Networks (CNNs) to reconstruct emission distributions, providing insights into the interplay between urban expansion, rice cultivation, and CH<sub>4</sub> emissions.
 
 ## Table of Contents
 

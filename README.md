@@ -16,7 +16,7 @@ This repository presents the findings and methodologies from a comprehensive stu
   - **Urbanization Trends:** Quantifying urban growth across the YRD.
   - **Agricultural Land Dynamics:** Mapping and characterizing changes in paddied rice extents.
   - **Integrated Land-Use Analysis:** Assessing urban-agricultural tradeoffs and implications.
-  - **XCH<sub>4</sub> Emission Patterns:** Spatial trends and historical reconstructions of methane (CH<sub>4</sub>) hotspots.
+  - **XCH<sub>4</sub> Emission Patterns:** Spatial trends and historical reconstructions of CH<sub>4</sub> hotspots.
 - **Discussion**
   - **Urban and Agricultural Dynamics:** Key drivers, trends, and implications of land-use changes.
   - **Methane Emission Insights:** Linking urbanization, agriculture, and atmospheric CH<sub>4</sub>.
